@@ -11,7 +11,7 @@ steps:
 - task: Docker@2
   displayName: Build an image
   inputs:
-    containerRegistry: 'docker-hub'
+    containerRegistry: 'temp-docker-hub'
     repository: 'dedalussalszbrun/lab'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
